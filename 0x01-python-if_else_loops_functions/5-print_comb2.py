@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 for number in range(0, 100):
     if number < 10:
-        print("0", number, ",", end="")
-    elif:
-        print("99")
+        print("0{}, ".format(number),  end="")
     else:
-        print(number, ",", end="")
+        print("{}, ".format(number), end="" if number < 99 else "\n")
