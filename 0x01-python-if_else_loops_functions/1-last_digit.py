@@ -16,4 +16,3 @@ elif last_digit != 0:
           "is less than 6 and not 0")
 else:
     print("Last digit of", number, "is", last_digit, "and is 0")
-
