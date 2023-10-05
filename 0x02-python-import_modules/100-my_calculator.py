@@ -10,9 +10,11 @@ if __name__ == "__main__":
     operator = sys.argv[2]
     if operator == "+":
         print("{} + {} = {}".format(a, b, add(a, b)))
-    if operator == "-":
+    elif operator == "-":
         print("{} - {} = {}".format(a, b, sub(a, b)))
-    if operator == "*":
+    elif operator == "*":
         print("{} * {} = {}".format(a, b, mul(a, b)))
-    if operator == "/":
+    elif operator == "/":
         print("{} / {} = {}".format(a, b, div(a, b)))
+    else:
+        print("Unknown operator. Available operators: +, -, * and /")
