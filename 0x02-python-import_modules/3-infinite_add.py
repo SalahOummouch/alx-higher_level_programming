@@ -2,5 +2,7 @@
 if __name__ == "__main__":
     import sys
     number=len(sys.argv) - 1
+    sum = 0
     for index in range(number):
-        print(int(sys.argv[index + 1]))
+        sum+=int(sys.arg[index + 1])
+    print(sum)
