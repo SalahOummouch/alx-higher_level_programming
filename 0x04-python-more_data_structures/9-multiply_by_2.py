@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-#9-multiply_by_2.py
+# 9-multiply_by_2.py
 def multiply_by_2(a_dictionary):
-    '''function that returns a new dictionary
-    with all values multiplied by 2'''
-    new_dir = a_dictionary.copy()
-    list_keys = list(new_dir.keys())
-    for i in list_keys:
-        new_dir[i] *= 2
-    return (new_dir)
+    '''Return a new dictionary with all values multiplied by 2.'''
+    new_dict = a_dictionary.copy()
+    for key in new_dict:
+        new_dict[key] *= 2
+    return new_dict
