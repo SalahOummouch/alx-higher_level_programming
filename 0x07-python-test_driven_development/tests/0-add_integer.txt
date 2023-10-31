@@ -1,0 +1,43 @@
+The ''0-add_integer'' module
+============================
+
+Using ''add_integer''
+---------------------
+
+Import function from module:
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Test one int argument:
+
+    >>> add_integer(2)
+    100
+
+Test 2 int argument:
+
+    >>> add_integer(20, 80)
+    100
+
+Test one float argument:
+
+    >>> add_integer(66.5)
+    164
+
+Test 2 float argument:
+
+    >>> add_integer(233.54, 66.22)
+    300
+
+the first invalid args :
+   
+    >>>add_integer("foo", 45):
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+the secode invalid args :
+
+    >>>add_integer(11, {}):
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
